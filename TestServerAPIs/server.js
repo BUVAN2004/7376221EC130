@@ -45,5 +45,8 @@ app.get("/numbers/p", (req, res) => fetchData("primes", res, "Error fetching pri
 app.get("/numbers/f", (req, res) => fetchData("fibo", res, "Error fetching Fibonacci numbers"));
 app.get("/numbers/r", (req, res) => fetchData("rand", res, "Error fetching random numbers"));
 
+
+
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
